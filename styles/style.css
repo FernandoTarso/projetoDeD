@@ -130,20 +130,50 @@ main .container {
   border-radius: 1rem;
 }
 #projetos img {
-  width: 236px;
-  height: 430px;
+  width: 210px;
+  height: 410px;
   object-fit: cover;
   border-radius: 1rem;
 }
 #panel li {
-  height: 430px;
+  position: relative;
+  height: 410px;
   background-color: #000000;
   border-radius: 1rem;
   margin: 1rem;
 }
 #panel li img:hover {
-  opacity: 60%;
+  opacity: 35%;
   box-shadow: 1rem 1rem 1rem 1rem #ffffff inset;
+}
+#panel li:hover:before {
+  visibility: visible;
+}
+ol {
+  counter-reset: item;
+  padding-left: 0;
+}
+#panel li::before {
+  content: "Projeto feito utilizando\A HTML/CSS/JS.\A Ver no Github pages.";
+  white-space: pre;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  padding: 1.5rem;
+  z-index: 1;
+  line-height: 1.5;
+}
+#panel li::after {
+  background-color: #000000aa;
+  text-align: center;
+  width: 100%;
+  height: 2.5rem;
+  padding-top: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  content: "Projeto " counters(item, ".");
+  counter-increment: item;
+  position: absolute;
+  bottom: 0;
 }
 
 .p-flex {
