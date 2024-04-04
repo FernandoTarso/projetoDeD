@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #eeeeee;
 }
 
 body,
@@ -8,7 +9,11 @@ h2,
 h3,
 p {
   margin: 0;
-  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -21,37 +26,37 @@ li {
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .backplate {
   display: grid;
-  width: 100vw;
   background-color: blueviolet;
+  padding: 1rem;
 }
 
 .container {
-  padding: 1rem;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+}
+.c-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header {
-  color: #eeeeee;
+main .container {
+  margin: 3rem auto;
 }
 
 .info {
   max-width: 50%;
-  color: #eeeeee;
 }
 .info p {
   margin-top: 1rem;
+  max-width: 50ch;
 }
 
 .perfil {
@@ -60,7 +65,6 @@ img {
 }
 
 .caption {
-  color: #eeeeee;
   text-align: center;
 }
 
@@ -68,4 +72,25 @@ img {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
+}
+.socials img {
+  height: 3rem;
+}
+
+.projetos-titulo {
+  background-color: rgb(100, 25, 170);
+  margin: 3rem auto;
+  padding: 1.4rem 2rem;
+  border-radius: 1rem;
+}
+#projetos img {
+  max-width: 220px;
+  border-radius: 1rem;
+}
+.p-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
