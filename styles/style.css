@@ -35,6 +35,9 @@ li {
   list-style: none;
   margin: 0;
 }
+li a {
+  display: block;
+}
 
 img {
   width: 100%;
@@ -124,27 +127,22 @@ main .container {
   border-radius: 1rem;
 }
 #projetos img {
-  max-width: 220px;
+  width: 236px;
   border-radius: 1rem;
 }
-#panel {
-  height: 700px;
-}
-#panel div:nth-child(odd) img:hover {
+#panel li:nth-child(odd) img:hover {
   box-shadow: 0 0 0 2px #aaaaaa;
 }
-#panel div:nth-child(even) img:hover {
+#panel li:nth-child(even) img:hover {
   box-shadow: 0 0 0 2px #c16bff;
 }
 .p-flex {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-/* #panel div {
-} */
 #panel {
+  min-width: 0;
   overflow-x: scroll;
 }
 
