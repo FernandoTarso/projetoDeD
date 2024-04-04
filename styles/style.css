@@ -113,8 +113,11 @@ main .container {
   border-radius: 50%;
   height: 3rem;
 }
-.socials img:hover {
-  box-shadow: 0 0 0 2px #af40ff;
+.socials li:nth-child(odd) img:hover {
+  box-shadow: 0 0 0 2px #aaaaaa;
+}
+.socials li:nth-child(even) img:hover {
+  box-shadow: 0 0 0 2px #c16bff;
 }
 
 #projetos {
@@ -128,14 +131,21 @@ main .container {
 }
 #projetos img {
   width: 236px;
+  height: 430px;
+  object-fit: cover;
   border-radius: 1rem;
 }
-#panel li:nth-child(odd) img:hover {
-  box-shadow: 0 0 0 2px #aaaaaa;
+#panel li {
+  height: 430px;
+  background-color: #000000;
+  border-radius: 1rem;
+  margin: 1rem;
 }
-#panel li:nth-child(even) img:hover {
-  box-shadow: 0 0 0 2px #c16bff;
+#panel li img:hover {
+  opacity: 60%;
+  box-shadow: 1rem 1rem 1rem 1rem #ffffff inset;
 }
+
 .p-flex {
   display: flex;
   align-items: center;
