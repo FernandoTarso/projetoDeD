@@ -1,3 +1,9 @@
+:root {
+  --lg-prp: linear-gradient(0deg, #640aa0, #961ee7);
+  --lg-prp-2: linear-gradient(0deg, #450870, #500a80);
+  --lg-prp-3: linear-gradient(0deg, #640aa0aa, #961ee7aa);
+  --lg-perfil: linear-gradient(0deg, #00e6e699, #eeeeeedd);
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #eeeeee;
@@ -15,6 +21,10 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+a:hover,
+summary:hover {
+  cursor: pointer;
 }
 
 ul {
@@ -37,7 +47,6 @@ summary {
 
 .backplate {
   display: grid;
-  /* background-color: blueviolet; */
   padding: 1rem;
 }
 
@@ -50,6 +59,24 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navegacao-primaria a {
+  border-radius: 1rem 0.1rem 1rem 0.1rem;
+  padding: 1rem 1.4rem;
+  background: var(--lg-prp);
+  box-shadow: 0 0 0 2px #eeeeee;
+}
+.navegacao-primaria a:hover {
+  background: var(--lg-prp-3);
+  color: #ffffff;
+  box-shadow: 0 0 0 2px #eeeeee88;
+}
+.navegacao-primaria a:visited {
+  color: #bbbbbb;
+}
+.navegacao-primaria a:visited:hover {
+  color: #ffffff;
 }
 
 main .container {
@@ -66,7 +93,8 @@ main .container {
 
 .perfil {
   border-radius: 50%;
-  background-color: aquamarine;
+  background: var(--lg-perfil);
+  border: 2px solid #eeeeee;
 }
 
 .caption {
@@ -79,14 +107,18 @@ main .container {
   gap: 1rem;
 }
 .socials img {
+  border-radius: 50%;
   height: 3rem;
+}
+.socials img:hover {
+  box-shadow: 0 0 0 2px #af40ff;
 }
 
 #projetos {
   padding-bottom: 2rem;
 }
 .projetos-titulo {
-  background-color: rgb(100, 25, 170);
+  background: var(--lg-prp);
   margin: 3rem auto;
   padding: 1.4rem 2rem;
   border-radius: 1rem;
@@ -95,17 +127,30 @@ main .container {
   max-width: 220px;
   border-radius: 1rem;
 }
+#panel {
+  height: 700px;
+}
+#panel div:nth-child(odd) img:hover {
+  box-shadow: 0 0 0 2px #aaaaaa;
+}
+#panel div:nth-child(even) img:hover {
+  box-shadow: 0 0 0 2px #c16bff;
+}
 .p-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
+}
+/* #panel div {
+} */
+#panel {
+  overflow-x: scroll;
 }
 
 .agradecimentos {
   margin: 2rem auto;
-  background-color: rgb(100, 25, 170);
+  background: var(--lg-prp-2);
   border-radius: 1rem;
   max-width: 52ch;
 }
@@ -119,4 +164,7 @@ details p {
 }
 details p::before {
   content: "";
+}
+.agradecimentos:hover {
+  box-shadow: 0 0 0 2px #aaaaaa;
 }
