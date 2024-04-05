@@ -151,7 +151,7 @@ main .container {
   margin: 3rem auto;
   padding: 1.4rem 2rem;
   border-radius: 1rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 #projetos img {
   width: 210px;
@@ -243,12 +243,17 @@ ol {
   padding: 1.4rem 2rem;
 }
 details p {
-  margin-top: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1.5rem;
   text-align: center;
 }
 details p::before {
+  display: block;
   content: "";
+  position: relative;
+  top: -1.5rem;
+  width: 100%;
+  height: 2px;
+  background-color: #961ee7;
 }
 .agradecimentos:hover {
   box-shadow: 0 0 0 2px #aaaaaa;
