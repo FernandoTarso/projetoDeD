@@ -129,9 +129,11 @@ main .container {
 }
 .socials li:nth-child(odd) img:hover {
   box-shadow: 0 0 0 2px #aaaaaa;
+  transform: scale(1.2);
 }
 .socials li:nth-child(even) img:hover {
   box-shadow: 0 0 0 2px #c16bff;
+  transform: scale(1.2);
 }
 
 #projetos {
