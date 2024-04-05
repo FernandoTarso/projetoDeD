@@ -17,6 +17,22 @@ h3,
 p {
   margin: 0;
 }
+ul,
+p,
+a,
+li,
+figcaption {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1,
+h2,
+h3 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .navegacao-primaria a:hover,
 .navegacao-primaria a:visited:hover,
