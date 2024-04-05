@@ -34,17 +34,6 @@ h3 {
   font-style: normal;
 }
 
-.navegacao-primaria a:hover,
-.navegacao-primaria a:visited:hover,
-.socials li:nth-child(odd) img:hover,
-.socials li:nth-child(even) img:hover,
-#panel li img:hover,
-#panel li:hover:before,
-::-webkit-scrollbar-thumb:hover,
-.agradecimentos:hover {
-  transition: 0.2s;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -76,9 +65,39 @@ summary {
   text-transform: capitalize;
 }
 
+.navegacao-primaria a:hover,
+.navegacao-primaria a:visited:hover,
+.socials li:nth-child(odd) img:hover,
+.socials li:nth-child(even) img:hover,
+#panel li img:hover,
+#panel li:hover:before,
+::-webkit-scrollbar-thumb:hover,
+.agradecimentos:hover,
+.logo:hover {
+  transition: 0.25s;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid #eeeeee;
+}
+.logo:hover {
+  color: #961ee7;
+  border-color: #961ee7;
+  box-shadow: 0 0 5px 2px #eeeeee;
+}
+
 .backplate {
   display: grid;
   padding: 1rem;
+}
+header.backplate {
+  padding-top: 2rem;
 }
 
 .container {
@@ -114,8 +133,11 @@ summary {
   color: #ffffff;
 }
 
+main {
+  height: calc(100vh - 8rem);
+}
 main .container {
-  margin: 3rem auto;
+  margin: 2rem auto;
 }
 
 .info {
@@ -253,13 +275,16 @@ ol {
   margin: 2rem auto;
   background: var(--lg-prp-2);
   border-radius: 1rem;
-  max-width: 52ch;
+  max-width: 50ch;
+}
+.agradecimentos p {
+  max-width: 43ch;
 }
 .agradecimentos summary {
   padding: 1.4rem 2rem;
 }
 details p {
-  padding: 1rem 2rem 1.5rem;
+  padding: 1rem 1.5rem 1.5rem;
   text-align: center;
 }
 details p::before {
