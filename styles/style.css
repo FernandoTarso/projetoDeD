@@ -10,6 +10,10 @@ body {
   background: linear-gradient(135deg, #0a0412, #961ee7);
 }
 
+* {
+  transition: 0.2s;
+}
+
 body,
 h1,
 h2,
@@ -46,6 +50,7 @@ img {
 
 summary {
   list-style: none;
+  text-transform: capitalize;
 }
 
 .backplate {
@@ -63,12 +68,16 @@ summary {
   justify-content: space-between;
   align-items: center;
 }
+.rev {
+  flex-wrap: nowrap;
+}
 
 .navegacao-primaria a {
   border-radius: 1rem 0.1rem 1rem 0.1rem;
   padding: 1rem 1.4rem;
   background: var(--lg-prp);
   box-shadow: 0 0 0 2px #eeeeee;
+  text-transform: capitalize;
 }
 .navegacao-primaria a:hover {
   background: var(--lg-prp-3);
@@ -89,9 +98,14 @@ main .container {
 .info {
   max-width: 50%;
 }
+.info h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
 .info p {
   margin-top: 1rem;
   max-width: 50ch;
+  font-size: 1.4rem;
 }
 
 .perfil {
@@ -128,6 +142,7 @@ main .container {
   margin: 3rem auto;
   padding: 1.4rem 2rem;
   border-radius: 1rem;
+  text-transform: capitalize;
 }
 #projetos img {
   width: 210px;
@@ -205,4 +220,14 @@ details p::before {
 }
 .agradecimentos:hover {
   box-shadow: 0 0 0 2px #aaaaaa;
+}
+
+@media (max-width: 600px) {
+  .rev {
+    flex-wrap: wrap-reverse;
+  }
+  .info {
+    max-width: 100%;
+    text-align: center;
+  }
 }
