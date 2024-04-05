@@ -10,16 +10,23 @@ body {
   background: linear-gradient(135deg, #0a0412, #961ee7);
 }
 
-* {
-  transition: 0.2s;
-}
-
 body,
 h1,
 h2,
 h3,
 p {
   margin: 0;
+}
+
+.navegacao-primaria a:hover,
+.navegacao-primaria a:visited:hover,
+.socials li:nth-child(odd) img:hover,
+.socials li:nth-child(even) img:hover,
+#panel li img:hover,
+#panel li:hover:before,
+::-webkit-scrollbar-thumb:hover,
+.agradecimentos:hover {
+  transition: 0.2s;
 }
 
 a {
@@ -177,7 +184,7 @@ ol {
   visibility: hidden;
   text-align: center;
   padding: 1.5rem;
-  z-index: 1;
+  z-index: 0;
   line-height: 1.5;
 }
 #panel li::after {
@@ -200,7 +207,30 @@ ol {
 }
 #panel {
   min-width: 0;
+  overflow-x: hidden;
+  padding-bottom: 0.5rem;
+}
+#panel:hover {
+  padding-bottom: 0;
   overflow-x: scroll;
+}
+#panel::-webkit-scrollbar {
+  background-color: #dddddd;
+  height: 0.5rem;
+}
+::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1px;
+}
+::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: inset 0 0 4px #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bbbbbb;
 }
 
 .agradecimentos {
