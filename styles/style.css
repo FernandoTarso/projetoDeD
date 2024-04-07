@@ -71,6 +71,8 @@ summary {
 .socials li:nth-child(even) img:hover,
 #panel li img:hover,
 #panel li:hover:before,
+#panel-2 li img:hover,
+#panel-2 li:hover:before,
 ::-webkit-scrollbar-thumb:hover,
 .agradecimentos:hover,
 .logo:hover {
@@ -202,25 +204,29 @@ main .container {
   object-fit: cover;
   border-radius: 1rem;
 }
-#panel li {
+#panel li,
+#panel-2 li {
   position: relative;
   height: 410px;
   background-color: #000000;
   border-radius: 1rem;
   margin: 1rem;
 }
-#panel li img:hover {
+#panel li img:hover,
+#panel-2 li img:hover {
   opacity: 35%;
   box-shadow: 1rem 1rem 1rem 1rem #ffffff inset;
 }
-#panel li:hover:before {
+#panel li:hover:before,
+#panel-2 li:hover:before {
   visibility: visible;
 }
 ol {
   counter-reset: item;
   padding-left: 0;
 }
-#panel li::before {
+#panel li::before,
+#panel-2 li::before {
   content: "Projeto feito utilizando\A HTML/CSS/JS.\A Ver no Github pages.";
   white-space: pre;
   position: absolute;
@@ -230,7 +236,8 @@ ol {
   z-index: 0;
   line-height: 1.5;
 }
-#panel li::after {
+#panel li::after,
+#panel-2 li::after {
   background-color: #000000aa;
   text-align: center;
   width: 100%;
@@ -248,16 +255,19 @@ ol {
   align-items: center;
   gap: 1rem;
 }
-#panel {
+#panel,
+#panel-2 {
   min-width: 0;
   overflow-x: hidden;
   padding-bottom: 0.5rem;
 }
-#panel:hover {
+#panel:hover,
+#panel-2:hover {
   padding-bottom: 0;
   overflow-x: scroll;
 }
-#panel::-webkit-scrollbar {
+#panel::-webkit-scrollbar,
+#panel-2::-webkit-scrollbar {
   background-color: #dddddd;
   height: 0.5rem;
 }
@@ -293,6 +303,9 @@ ol {
   cursor: pointer;
   transform: scale(1.1);
   transition: 0.2s;
+}
+.mais-projetos {
+  display: none;
 }
 
 .agradecimentos {
