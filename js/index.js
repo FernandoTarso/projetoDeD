@@ -2,7 +2,9 @@ const botaoMaisProjetos = document.querySelector(".botao-mais");
 const botaoEsconder = document.querySelector(".botao-esconder");
 const projetosInativos = document.querySelectorAll(".hide");
 const projetosAtivos = document.querySelectorAll(".show");
-console.log(botaoMaisProjetos);
+projetosInativos.forEach(function (projetoInativo) {
+  console.log(projetoInativo);
+});
 botaoMaisProjetos.addEventListener("click", () => {
   mostrarMaisProjetos();
   esconderBotao();
@@ -15,6 +17,7 @@ function mostrarMaisProjetos() {
     projetoInativo.classList.add("show");
   });
 }
+
 botaoEsconder.addEventListener("click", () => {
   esconderMaisProjetos();
   mostrarBotao();
@@ -25,5 +28,8 @@ function mostrarBotao() {
 function esconderMaisProjetos() {
   projetosInativos.forEach((projetoInativo) => {
     projetoInativo.classList.remove("show");
+  });
+  projetosInativos.forEach(function (projetoInativo) {
+    console.log(projetoInativo);
   });
 }
