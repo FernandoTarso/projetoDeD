@@ -332,14 +332,6 @@ details p::before {
     max-width: 100%;
     text-align: center;
   }
-  .perfil {
-    max-width: 200px;
-    max-height: 200px;
-  }
-  .info {
-    margin: 0 auto;
-    max-width: 100%;
-  }
   .info h1 {
     font-size: 2rem;
     margin-top: 1rem;
@@ -349,13 +341,14 @@ details p::before {
     max-width: 50ch;
     font-size: 1rem;
   }
+  .perfil {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .socials-container {
+    display: grid;
+  }
+  .socials {
+    margin: 1rem auto;
+  }
 }
-/* @media (max-width: 600px) {
-  .rev {
-    flex-wrap: wrap-reverse;
-  }
-  .info {
-    max-width: 100%;
-    text-align: center;
-  }
-} */
