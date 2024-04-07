@@ -135,6 +135,7 @@ header.backplate {
 
 main {
   height: calc(100vh - 8rem);
+  max-height: 200vh;
 }
 main .container {
   margin: 2rem auto;
@@ -269,6 +270,25 @@ ol {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #bbbbbb;
+}
+
+#projetos div.container {
+  display: grid;
+}
+.botao {
+  margin: 2rem auto;
+  padding: 1.4rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background: var(--lg-prp-2);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #eeeeee;
+}
+.botao:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .agradecimentos {
