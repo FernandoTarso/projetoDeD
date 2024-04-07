@@ -192,10 +192,7 @@ main .container {
   padding-bottom: 2rem;
 }
 .projetos-titulo {
-  background: var(--lg-prp);
   margin: 3rem auto;
-  padding: 1.4rem 2rem;
-  border-radius: 1rem;
   text-transform: uppercase;
 }
 #projetos img {
@@ -253,7 +250,6 @@ ol {
 .p-flex {
   display: flex;
   align-items: center;
-  gap: 1rem;
 }
 #panel,
 #panel-2 {
@@ -289,7 +285,8 @@ ol {
 #projetos div.container {
   display: grid;
 }
-.botao-mais {
+.botao-mais,
+.botao-esconder {
   margin: 2rem auto;
   padding: 1.4rem 2rem;
   border: none;
@@ -299,13 +296,17 @@ ol {
   font-weight: bold;
   color: #eeeeee;
 }
-.botao-mais:hover {
+.botao-mais:hover,
+.botao-esconder:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: 0.2s;
 }
-.mais-projetos {
+.hide {
   display: none;
+}
+.show {
+  display: flex;
 }
 
 .agradecimentos {
